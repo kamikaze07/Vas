@@ -34,10 +34,12 @@ $(document).ready(function () {
             case "Usuario No Encontrado":
               $.notify("Usuario No Encontrado", "error");
               $("#signin").trigger("reset");
+              $("#user").focus();
               break;
             case "no":
               $.notify("Usuario o Contraseña Erroneos", "error");
               $("#signin").trigger("reset");
+              $("#user").focus();
               break;
             default:
                 $.notify(data[0]+"Correcto", "success");

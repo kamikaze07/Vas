@@ -52,14 +52,14 @@
                                     <label>Usuario</label>
                                     <div class="form-group">
                                         <label class="sr-only"></label>
-                                        <input type="text" class="form-control" name="user" placeholder="Usuario" required>
+                                        <input type="text" class="form-control" id="user" name="user" placeholder="Usuario" required>
                                     </div> 
                                 </div>
                                 <div class="form-login">
                                     <label>Contraseña</label>
                                     <div class="form-group">
                                         <label class="sr-only"></label>
-                                        <input type="password" class="form-control" name="password" placeholder="Contraseña" required>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
                                     </div>
                                 </div>
                                 <div class="form-login">
