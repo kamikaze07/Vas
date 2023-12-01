@@ -96,8 +96,8 @@
         <!-- BootstrapValidator -->
         <script src="assets/plugins/bootstrapvalidator/dist/js/bootstrapValidator.js" type="text/javascript"></script>
 
-        <!-- SweerAlert -->
-        <script src="assets/plugins/sweetalert/dist/sweetalert2.js" type="text/javascript"></script>
+        <!--Notify -->
+        <script src="assets/js/notify.js"></script>
 
         <!-- signing -->
         <script src="assets/js/signin.js"></script>

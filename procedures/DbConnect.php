@@ -7,10 +7,9 @@
     $port = "3306";
     
     // Create connection
-    $conexion= mysqli_connect($servername,$username,$password,$dbname,$port);
+      $conexion= mysqli_connect($servername,$username,$password,$dbname,$port);
     // Check connection
     if (!$conexion) {
       die("Connection failed: " . mysqli_connect_error());
     }
-    
 ?>

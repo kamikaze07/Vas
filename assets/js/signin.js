@@ -4,10 +4,10 @@ $(document).ready(function () {
     .bootstrapValidator({
       excluded: [":disabled"],
       fields: {
-        email: {
+          user: {
           validators: {
             notEmpty: {
-              message: "El email es requerido",
+              message: "Ingresa el Usuario",
             },
           },
         },
@@ -31,16 +31,16 @@ $(document).ready(function () {
           console.log(data);
           var result = JSON.parse(data);
           switch (result[0]) {
-            case "Usuario o Miembro No Encontrado":
+            case "Usuario No Encontrado":
               $.notify("Usuario No Encontrado", "error");
               $("#signin").trigger("reset");
               break;
             case "no":
-              $.notify("email o Contraseña Erroneos", "error");
+              $.notify("Usuario o Contraseña Erroneos", "error");
               $("#signin").trigger("reset");
               break;
             default:
-                $.notify("Correcto", "success");
+                $.notify(data[0]+"Correcto", "success");
           }
         },
       });
